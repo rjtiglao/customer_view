@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/rjtiglao/customer_view/issues"
   },
-  "homepage": "https://github.com/rjtiglao/customer_view#readme"
+  "homepage": "https://github.com/rjtiglao/customer_view#readme",
+  "dependencies": {
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1"
+  }
 }
