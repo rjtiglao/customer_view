@@ -81,10 +81,10 @@ let inventorySearch = function() {
             console.log(`Your order was successfully placed!`);
             readTable2();
 
-            // TOTALE COST CALCULATION
+            // TOTAL COST CALCULATION
             connection.query(costQuery, {item_id: itemId }, function(err,res){
                 console.log(`The total cost for your order is: `);
-                console.log(`$${res[0]["price"] * qty}`);
+                console.log(`$${Math.round(100*(res[0]["price"] * qty))/100}`);
                 console.log("THANK YOU FOR YOUR ORDER!");
                 connection.end();
             });
